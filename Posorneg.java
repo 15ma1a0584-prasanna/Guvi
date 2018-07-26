@@ -15,8 +15,8 @@ class Posorneg
 		if(a==0)
 		System.out.println("zero");
 		else if(a>0)
-		System.out.println("positve");
+		System.out.println("Positve");
 		else
-		System.out.println("negative");
+		System.out.println("Negative");
 	}
 }
