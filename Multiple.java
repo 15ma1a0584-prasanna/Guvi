@@ -8,6 +8,7 @@ class Multiple {
       {
           mul=i*n;
           System.out.println(mul);
+            System.out.println(" ");
       }
         
     }
