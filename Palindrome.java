@@ -19,7 +19,7 @@ class Palindrome
 			n=n/10;
 		}
 		if(n==rev)
-		System.out.println("Palindrom");
+		System.out.println("yes");
 		else
 		System.out.println("not");
 	
