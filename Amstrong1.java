@@ -21,7 +21,6 @@ class Amstrong1{
                System.out.printf("%d ",i);
            }
                sum=0;
-
-          }
+           }
 }
 }
