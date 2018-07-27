@@ -21,7 +21,7 @@ class Palindrome
 		if(n==rev)
 		System.out.println("Palindrom");
 		else
-		System.out.println("Not");
+		System.out.println("not");
 	
 	}
 }
