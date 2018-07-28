@@ -8,10 +8,10 @@ import java.io.*;
 class Arithmetic{
      
     // Function to find sum of series.
-    static float sumOfAP(float a, float d, 
+    static int sumOfAP(int a, int d, 
                                   int n)
     {
-        float sum = 0;
+        int sum = 0;
         for (int i = 0; i < n; i++)
         {
             sum = sum + a;
