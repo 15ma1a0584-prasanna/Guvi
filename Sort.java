@@ -2,7 +2,6 @@ import java.util.*;
 class Sort {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
    int a[]=new int[20];
    int n,i,j,temp;
      Scanner sc=new Scanner(System.in);
