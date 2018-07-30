@@ -6,10 +6,10 @@ class Stringnum{
        Scanner s=new Scanner(System.in);
        d=s.next().charAt(0);
        if(d>='0'&&d<='9'){
-           System.out.println("Yes");
+           System.out.println("yes");
        }
       else{
-           System.out.println("No");
+           System.out.println("no");
       }
       
       
