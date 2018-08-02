@@ -63,7 +63,7 @@ class Sort26
         
       
 
-        QuickSort ob = new QuickSort();
+        Sort26 ob = new Sort26();
         ob.sort(arr, 0, n-1);
 
         printArray(arr);
