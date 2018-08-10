@@ -5,7 +5,7 @@ import java.lang.*;
 import java.io.*;
 
 /* Name of the class has to be "Main" only if the class is public. */
-class Fib40
+class Ideone
 {
 	public static void main (String[] args) throws java.lang.Exception
 	{
@@ -14,11 +14,14 @@ class Fib40
 		int a=0,b=1;
 		Scanner sc=new Scanner(System.in);
 		int n=sc.nextInt();
-		System.out.println(b);
+		System.out.print(b);
+		System.out.print(" ");
 		for(int i=1;i<n;i++)
 		{
 			c=a+b;
-			System.out.println(c);
+			
+			System.out.print(c);
+			System.out.print(" ");
 			a=b;
 			b=c;
 		}
