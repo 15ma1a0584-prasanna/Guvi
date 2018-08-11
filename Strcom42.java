@@ -1,4 +1,4 @@
-import java.util.*;
+import java.util.Scanner;
 class strcom42 {
 
 	public static void main(String[] args) {
