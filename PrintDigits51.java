@@ -12,7 +12,7 @@ class PrintDigits51
         printDigits51(num / 10);
     }
     System.out.print(num % 10);
-    System.out.print(" ");
+    System.out.print("\t");
 }
 	public static void main (String[] args) throws java.lang.Exception
 	{
