@@ -16,10 +16,10 @@ class Binary62 {
          }
 
        if(n==0){
-          System.out.println("No");
+          System.out.println("no");
        }
  else{
-      System.out.println("Yes");
+      System.out.println("yes");
  }
 }
     }
