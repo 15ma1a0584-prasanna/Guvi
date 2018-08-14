@@ -10,7 +10,7 @@ class Factor77
         for(int i=1;i<=b;i++){
             if(b%i==0){
                 System.out.print(i);
-                System.out.print(" ");
+               // System.out.print(" ");
             }
         }
       
