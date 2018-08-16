@@ -4,7 +4,7 @@ import java.util.*;
 import java.lang.*;
 import java.io.*;
 
-class Dividestr90
+class Dividestr85
 {
 	public static void main (String[] args) throws java.lang.Exception
 	{
