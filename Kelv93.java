@@ -2,7 +2,7 @@
 import java.util.*;
 import java.lang.*;
 import java.util.ArrayList;
-class kelv93{
+class Kelv93{
 
      public static void main(String aa[]){
     int a,b,c;
