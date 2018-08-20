@@ -1,21 +1,24 @@
 import java.util.*;
-class StringCapital103
-{
-	public static void main(String[] args)
-	{           
-		Scanner sc=new Scanner(System.in);
-		String str = sc.nextLine();
-		StringBuilder result = new StringBuilder(str.length());
-		String words[] = str.split("\\ "); 
-		for (int i = 0; i < words.length; i++)
-		{			
-			result.append(Character.toUpperCase(words[i].charAt(0))).append(words[i].substring(1)).append(" ");
-			
-		}
-		
-		System.out.println(result);
-		
- 
-	}
+import java.lang.*;
+import java.util.ArrayList;
+ class StringCapital103{
+    public static void main(String aa[]){
+    String a;
+    int d;
+    Scanner s=new Scanner(System.in);
+    a=s.nextLine();
+    String h[]=a.split("\\s+");
+    for(int i=0;i<h.length;i++){
+        char c=h[i].charAt(0);
+        char t=Character.toUpperCase(c);
+        h[i]=h[i].replace(c, t);
+    }
+    for(String j:h){
+        System.out.printf("%s ", j);
+    }
+   
+    
+   
+           
+   }
 }
- 
