@@ -16,6 +16,6 @@ class Prg106
 		if(a[k]%2!=0)
 		System.out.println(a[k]);
 		else
-		System.out.println(a[k-1]);
+		System.out.println(a[k+1]);
 	}
 }
