@@ -20,7 +20,7 @@ import java.util.Scanner;
             a[0]=temp;
         }
         for(i=0;i<n;i++){
-            System.out.print(a[i]+" ");
+            System.out.print(a[i]);
         }
         
     }
