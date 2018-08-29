@@ -1,32 +1,29 @@
-import java.util.*;
-import java.lang.*;
-import java.io.*;
-
- class Stringreverse14 
-{
-    public static void main(String args[])
-    {
-       Scanner sc=new Scanner(System.in);
-       String S=sc.nextLine();
-       int l=S.length();
-       char[] a=S.toCharArray();
-       char[] b=new char[l];
-      
-       int j=0,i;
-       for( i=0;i<l;i++)
-       {  
-          if(a[i]!='a'&&a[i]!='e'&&a[i]!='i'&&a[i]!='o'&&a[i]!='u'&&a[i]!='A'&&a[i]!='E'&&a[i]!='I'&&a[i]!='O'&&a[i]!='U')
-          {
-           b[j]=a[i];
-           j++;
-           
-          }
-       }
-       for(i=j-1;i>=0;i--)
-          System.out.print(b[i]);
-          
-      
-       
-        
-    }
+import java.util.Scanner;
+class Stringreverse14 extends Exception{
+	public static void main(String args[]){
+		try{
+			Scanner s=new Scanner(System.in);
+			int num=s.nextInt();
+			s.nextLine();
+			String str=s.nextLine();
+			char ch[]=str.toCharArray();
+			int j=0;
+			char ch1[]=new char[num];
+			for(int i=0;i<num;i++){
+				if(ch[i]!='a'&&ch[i]!='e'&&ch[i]!='i'&&ch[i]!='o'&&ch[i]!='u'&&ch[i]!='A'&&ch[i]!='E'&&ch[i]!='I'&&ch[i]!='O'&&ch[i]!='U'){
+					ch1[j]=ch[i];
+									j++;
+				}
+			}
+		StringBuilder str1=new StringBuilder();
+			for(int i=ch1.length-1;i>-1;i--){
+				str1.append(ch1[i]);
+			}
+			System.out.println(str1);
+			
+		}
+		catch(Exception e){
+			System.out.println(e);
+		}
+	}
 }
