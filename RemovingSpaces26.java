@@ -3,24 +3,18 @@ import java.lang.*;
 import java.io.*;
 class RemovingSpaces26
 {
-	public static void main (String[] args) throws java.lang.Exception
-	{
-			String text;
-		Scanner sc=new Scanner(System.in);
-		text=sc.nextLine();
-if(text.indexOf("  ")>0){
- while(text.indexOf("  ") >= 0)
-{
-	
-text = text.replaceAll("  "," ");
-}
-System.out.print(text);
-}
+    public static void main(String args[])
+    {
+    	Scanner sc=new Scanner(System.in);
+        String str = sc.nextLine();
+        char[] c = str.toCharArray();
+        String str1 = "";
+        for(int i = 0;i<str.length()-1;i++)
+        {
+            if((c[i] == ' '&& c[i+1] != ' ') || (c[i] != ' '))
+                str1 += c[i];
+        }
 
-else{
-	text=text.replaceAll(" ","");
-	System.out.print(text);
-}
-}
-	
+        System.out.println(str1);
+    }
 }
