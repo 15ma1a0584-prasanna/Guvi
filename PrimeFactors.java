@@ -31,7 +31,7 @@ import java.util.Scanner;
         	}
         	if(flag==1 && num%i==0)
         	{	
-        		System.out.print(i); 		 
+        		System.out.print(i+" "); 		 
         	}
         	
         }        
