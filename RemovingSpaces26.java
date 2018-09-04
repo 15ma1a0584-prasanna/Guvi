@@ -9,7 +9,7 @@ class RemovingSpaces26
         String str = sc.nextLine();
         char[] c = str.toCharArray();
         String str1 = "";
-        for(int i = 0;i<str.length()-1;i++)
+        for(int i = 0;i<str.length();i++)
         {
             if((c[i] == ' '&& c[i+1] != ' ') || (c[i] != ' '))
                 str1 += c[i];
