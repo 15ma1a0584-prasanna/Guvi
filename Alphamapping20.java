@@ -1,7 +1,7 @@
 import java.util.HashMap;
 import java.util.Scanner;
 
- class alphamapping20
+ class Alphamapping20
 {    
     static void mapscript(String s)
     {    	
