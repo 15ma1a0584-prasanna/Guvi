@@ -27,7 +27,7 @@ import java.util.Scanner;
     }
     public static void main (String[] args) 
     {
-    	System.out.println("Please enter a String");
+    
     	Scanner sn = new Scanner(System.in);
     	String a=sn.next();
     	mapscript(a);
