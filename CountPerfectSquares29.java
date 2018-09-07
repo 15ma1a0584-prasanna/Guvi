@@ -2,7 +2,7 @@ import java.util.*;
 class CountPerfectSquares29
 {
 
-    static int countSquares(int a, int b)
+    static int countPerfectSquares29(int a, int b)
     {
         int cnt = 0; 
 
@@ -20,7 +20,7 @@ class PerfectSquares {
     {
     	Scanner sc=new Scanner(System.in);
         int a = sc.nextInt(), b = sc.nextInt();
-        CountSquares obj = new CountSquares();
-        System.out.print( obj.countSquares(a, b));
+        CountPerfectSquares29 obj = new CountPerfectSquares29();
+        System.out.print( obj.countPerfectSquares29(a, b));
     }
 }
