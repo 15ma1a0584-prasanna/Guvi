@@ -16,7 +16,7 @@ class Prg23
    for(Integer m:b)
    {
       a.add(m);
-      System.out.print(Collections.max(a));
+      System.out.print(Collections.max(a)+"  ");
    }
    sc.close();
  }
