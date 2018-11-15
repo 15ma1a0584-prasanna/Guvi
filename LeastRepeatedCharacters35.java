@@ -1,39 +1,29 @@
+import java.util.ArrayList;
+import java.util.Collections;
 import java.util.Scanner;
 
+
  class LeastRepeatedCharacters35 {
-    public static int FindMinCount(String s){
-          char ch[]=s.toCharArray();
-          int count=0,min=Integer.MAX_VALUE;
-        for(int i=0;i<ch.length;i++)
-        {
-            count=0;
-            for(int j=0;j<ch.length;j++)
-            {
-                if(ch[i]==ch[j])
-                    count++;
-            }
-            if(count<min)
-                min=count;
-        }
-        return min;
-    }
-    public static void main(String[] args) {
-        Scanner in=new Scanner(System.in);
-        String S=in.nextLine();
-        S=S.toLowerCase();
-        int count1=0;
-        int min=FindMinCount(S);
-        char ch[]=S.toCharArray();
-         for(int i=0;i<ch.length;i++)
-        {
-            count1=0;
-            for(int j=0;j<ch.length;j++)
-            {
-                if(ch[i]==ch[j])
-                    count1++;
-            }
-            if(count1==min&& ch[i]!=' ')
-                System.out.print(ch[i]+" ");;
-        }
-    }
+	public static void main(String args[]){
+		Scanner sc=new Scanner(System.in);
+		String s=sc.nextLine();
+		s=s.replace(" " ,"");
+		ArrayList<String> al=new ArrayList<String>();
+		for(int i=0;i<s.length();i++){
+			al.add(Character.toString(s.charAt(i)));
+		}
+		ArrayList<String> al1=new ArrayList<String>();
+		for(int i=0;i<s.length();i++){
+			al1.add(Character.toString(s.charAt(i)).toLowerCase());
+		}
+		ArrayList<Integer> al2=new ArrayList();
+		for(int i=0;i<al.size();i++)
+			al2.add(Collections.frequency(al1,al1.get(i)));
+		int m=Collections.min(al2);
+		for(int i=0;i<al.size();i++)
+		{
+			if(al2.get(i)==m)
+				System.out.print(al1.get(i)+" ");
+		}
+	}
 }
