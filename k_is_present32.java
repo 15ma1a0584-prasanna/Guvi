@@ -17,14 +17,14 @@ class k_is_present32 {
         {
             if(a[i]==k)
             {
-                System.out.println("YES");
+                System.out.println("Yes");
                 f=2;
                 break;
             }
         }
         if(f!=2)
         {
-            System.out.println("NO");
+            System.out.println("No");
         }
         
     }
