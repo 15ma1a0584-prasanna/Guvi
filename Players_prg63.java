@@ -25,7 +25,7 @@ class Players_prg63
 	            {
 	                if(a[i]==b[j] && a[i]!=t)
 	                {
-	                    System.out.print(a[i]+" ");
+	                    System.out.print(a[i]);
 	                    t=a[i];
 	                }
 	                
