@@ -1,21 +1,20 @@
 import java.util.*;
+
 class Players_prg71
 {
-  public static void main(String aa[]){
-      int n;
-      Scanner s=new Scanner(System.in);
-      n=s.nextInt();
-      int a[]=new int[n];
-      for(int i=0;i<n;i++){
-          a[i]=s.nextInt();
-      }
-      for(int i=0;i<n-1;i++){
-          if(a[i]>a[i+1]){
-              System.out.print(a[i]+" ");
-          }
- else{
-              System.out.print(a[i+1]+" ");
- }
-      }
-    }
+	public static void main (String[] args) throws java.lang.Exception
+	{
+		Scanner sc= new Scanner(System.in);
+		int n=sc.nextInt();
+		int a[]= new int[n];
+		for(int i=0;i<n;i++) {
+			a[i]=sc.nextInt();
+		}
+		for(int i=0;i < n-1 ;i++) {
+			if(a[i]>a[i+1])
+				System.out.print(a[i] + " ");
+			else
+				System.out.print(a[i+1] + " ");
+		}
+	}
 }
