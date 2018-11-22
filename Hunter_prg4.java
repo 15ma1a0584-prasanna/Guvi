@@ -1,52 +1,29 @@
-import java.util.Scanner;
-
- class Hunter_prg4 
+import java.util.*;
+import java.lang.annotation.*;
+ class Hunter_prg4
  {
+    public static void main(String []args) {
+        Scanner in=new Scanner(System.in);
+        int n=in.nextInt();
+        int a[]=new int[n];
+        for(int i=0;i<n;i++){
+            a[i]=in.nextInt();
+        }
+        int b[]=new int[10];
+        for(int i=0;i<n;i++){
+            b[a[i]]++;
+        }
+        int count=0;
+        for(int i=0;i<10;i++){
+            if(b[i]==1){
+                count++;
+                System.out.print(i+" ");
+            }
+        }
+        if(count==0){
+            System.out.print("Invalid Input");
+        }
 
-	public static void main(String[] args) {
-	
-		int a[] = new int[25];
-		int dup[] = new int[20];
-		int snum=0,k=0; 
-		Scanner sc = new Scanner(System.in);
+    }
 
-		int n = sc.nextInt();
-	
-	for(int i=0;i<n;i++)
-	{
-		a[i] = sc.nextInt();
-	}
-	
-		for(int i=1;i<n;i++)
-		{
-		for(int j=0;j<n;j++)
-		{
-		if(a[i-1]==a[j+i])
-		{
-		dup[k] = a[i-1];
-		k++;
-	 	}
-		}
-		}
-		
-		k=0;
-		for(int j=0;j<n;j++)
-		{
-		k=0;
-		for(int i=0;i<n/2;i++)
-		{
-		if(a[j]!=dup[i])
-		{
-		k = k+1;
-		}
-		if(k==(n/2))
-		{
-		snum = a[j];
-		}
-		}
-		}
-			
-
-		System.out.println(snum);
-}
 }
